@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Burger Shop</title>
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+<script src="main.js"></script>
+</head>
+
+<h1>Burger shop</h1>
+
+<body>
+
+	
+	<div class="tip">
+	<ul class="products">
+		<li>
+			<a href="#" class="item">
+				<img src="images/Cheeseburger.jpg" height="200px" width="215"/>
+				<div>
+					<p>Cheese Burger</p>
+					<p>Price:$12</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/beefburger.jpg" height="200px" width="230"/>
+				<div>
+					<p>beef burger</p>
+					<p>Price:$10</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/chickenburger.jpg" height="200px" width="200"/>
+				<div>
+					<p>chicken burger</p>
+					<p>Price:$8</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/wings.jpg" height="200px" width="215"/>
+				<div>
+					<p>wings</p>
+					<p>Price:$5</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/veganburger.jpeg" height="200px" width="215"/>
+				<div>
+					<p>Vegan Burger</p>
+					<p>Price:$7</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/fishburger.jpg" height="200px" width="200"/>
+				<div>
+					<p>Fish Burger</p>
+					<p>Price:$9</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/chips.jpg" height="200px" width="230"/>
+				<div>
+					<p>Chips</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/steakburger.jpg" height="200px" width="215"/>
+				<div>
+					<p>Steak Burger</p>
+					<p>Price:$13</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/cola.png" height="260px" width="215"/>
+				<div>
+					<p>Cola</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/sprite.png" height="260px" width="160"/>
+				<div>
+					<p>Sprite</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/fanta.png" height="260px" width="180"/>
+				<div>
+					<p>Fanta</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="images/water.jpg" height="260px" width="215"/>
+				<div>
+					<p>Water</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	<div class="cart">
+		<td valign="top">
+            <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
+                <thead>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Description
+                        </td>
+                        <td>
+                            Price
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="orderedProductsTblBody">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="right" id="cart_total">
+
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </td>
+    </tr>
+</table>
+	</div>
+	
+</body>
+
+</html>
